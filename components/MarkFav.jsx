@@ -1,4 +1,4 @@
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, TouchableOpacity } from "react-native";
 import React, { useEffect, useState } from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { GetFavList, UpdateFav } from "@/Shared/Shared";
@@ -26,13 +26,13 @@ const MarkFav = ({ pet, color = "black" }) => {
     const fav = favList;
     fav.push(pet?.id);
     await UpdateFav(user, fav);
-    GetFav();
+    await GetFav();
   };
 
   const RemoveFromFav = async () => {
     const favResult = favList.filter((item) => item !== pet.id);
     await UpdateFav(user, favResult);
-    GetFav();
+    await GetFav();
   };
 
   return (

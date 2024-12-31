@@ -15,6 +15,7 @@ import { useRouter } from "expo-router";
 
 const Home = () => {
   const navigation = useRouter();
+
   return (
     <View style={{ padding: 20, marginTop: 20 }}>
       <Header />

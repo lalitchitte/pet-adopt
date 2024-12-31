@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "pet-adopt",
+    "name": "Adopt Me",
     "slug": "pet-adopt",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/adopt.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -27,9 +27,9 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
+          "image": "./assets/images/adopt.png",
+          "imageWidth": 300,
+          "resizeMode": "cover",
           "backgroundColor": "#ffffff"
         }
       ],

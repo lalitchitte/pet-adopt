@@ -6,6 +6,7 @@ import MarkFav from "../MarkFav";
 
 const PetListItem = ({ pet }) => {
   const router = useRouter();
+
   return (
     <TouchableOpacity
       style={styles.petListItem}

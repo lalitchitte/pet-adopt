@@ -49,7 +49,20 @@ const Favorite = () => {
 
       <FlatList
         style={{ marginTop: 10 }}
+        ListEmptyComponent={
+          <Text
+            style={{
+              textAlign: "center",
+              fontFamily: "outfit-medium",
+              fontSize: 18,
+              marginTop: 20,
+            }}
+          >
+            No Favorites
+          </Text>
+        }
         data={favPetList}
+        showsVerticalScrollIndicator={false}
         onRefresh={GetFav}
         refreshing={loader}
         numColumns={2}
